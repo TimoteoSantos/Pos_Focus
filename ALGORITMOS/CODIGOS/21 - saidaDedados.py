@@ -29,3 +29,35 @@ for i in range(100):
         if i == 60:# se for 60 nao vai imprimir
             continue
     print(i)
+    
+
+#saida de dados
+print('timoteo jose', sep=' ', end='!', flush=False)
+#primeito argumento o nome segundo um separador terceiro o que aparce no final
+#quarto so manda para o console quando passar para a proxima linha
+
+print('timoteo josse dos santos', sep='\t')
+
+# criando variaveis
+a = 1
+b = 2
+#o sep='\t' separa os argumentos por tabulacao
+print('a =', a, 'b=', b, sep='\t')
+
+#usando o comando end para laterar a saida
+print('a=', a, end=' ')
+print('b=', b)
+
+
+#combinando operadores com print
+a = 1
+b = 2
+
+#ele concatena porque nao e um valor que possa somar
+print("a" + "b")  #concatenação
+
+#somando valores convertendo e somando
+print(int(a) + int(b))
+
+#escreve 5 vezes a letra a
+print(5 * "a")
