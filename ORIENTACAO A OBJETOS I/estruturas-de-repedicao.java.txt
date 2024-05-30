@@ -1,0 +1,51 @@
+public class Main {
+    public static void main(String[] args){
+        //TRABALHANDO COM ESTRUTURAS DE REPETICAO
+
+        //for
+        for (int repetir= 0;repetir < 10;repetir++){
+            System.out.println(repetir);
+        }
+
+        //while
+        int controle = 0;
+        while(controle < 10){
+            System.out.println(controle);
+            controle++;
+        }
+
+        //do while ele execulta no final do bloco ou
+        // seja pelo na primeira vez ira execultar
+        // independente do retorno
+        //perceber que o 11 nao era para ser impresso mas foi porque na primeira vez
+        //ele nao verifica a condição
+        controle = 11;
+        do {
+            System.out.println(controle);
+
+        }while (controle < 10);
+
+        //usando for para ler array
+
+        //criando um array de frutas
+        String[] frutas = new String[] {"Laranja, Banana, Maçã"};
+
+        //repeticao para percorrer o array criado acima
+        for (var i = 0;i < frutas.length;i++) {
+            //criando uma variavel que ira receber o dado da fruta percorrida
+            String fruta = frutas[i];
+            //escrever a fruta percorrida
+            System.out.println(fruta);
+        }//final do for acima
+
+        //existe uma estrutura especifica para percorrer arrays o for reach é uma forma diferente de
+        //escrever um for no java
+
+        //criando um foreach
+        for (String fruta : frutas){
+            System.out.println(fruta); //acessando o elemento percorrido
+        }//final do foreach
+
+
+    }
+}
