@@ -26,13 +26,11 @@ public class Main {
             imprimir(f);
         }
     }
-
     //classe principal do programa
     public static void main(String[] args){
         //instanciando a propria main porque precisamos chamar seu metodo run()
         Main m = new Main();
         //metodo que percorre todas as formas
         m.run();
-
     }
 }

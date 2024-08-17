@@ -34,8 +34,8 @@ public class Retangulo extends Forma {
     sobreposicao pois ele tera a mesma assinatura ou seja a quantidade tipo de argumentos, o tipo do retorno precisam
     ser guais outra coisa é que podemos por boa pratica precisamos usar a anotação @overide para identificar os metodos que
     sao polimorfismo pois o compilador ira procurar por esse metodo na superclasse e gerara um erro cado nao tena
-    *
     * */
+
     @Override //indicando que este metodo foi sobreposto pois existe um metodo na classe mae igual esse com mesmo nome e assinatura
     public double getArea() {
         return  lado1 * lado2;
