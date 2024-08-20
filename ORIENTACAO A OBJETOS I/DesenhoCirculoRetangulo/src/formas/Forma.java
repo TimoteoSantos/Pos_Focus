@@ -1,4 +1,6 @@
 package formas;
+import interfaces.Poligono;
+import interfaces.colorivel;
 import suplementos.Cor;
 
 //classes abstratas nao podem ser instanciadas por new, tem metodos publicos abstratos
@@ -6,7 +8,7 @@ import suplementos.Cor;
 //uma classe abstrata mas pode implentar varias interfaces
 
 //classe abstrata
-public abstract class Forma {
+public abstract class Forma implements colorivel, Poligono {
     //metodo privado cor
     private Cor cor;
 
@@ -19,8 +21,4 @@ public abstract class Forma {
     public Cor getCor() {
         return this.cor;
     }
-
-    //metodos abstratos sem implementação deve ser implementado pela classe que o herda
-    public abstract double getArea();
-    public abstract double getPerimetro();
 }
